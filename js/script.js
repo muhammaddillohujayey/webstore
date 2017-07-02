@@ -6,11 +6,11 @@ $(function(){
 	$('.search').on('click',function(){
 		$('.main-menu .navbar-form').slideToggle();
 	});
-
-	$('#elastislide').elastislide();
 });
 
 $(window).load(function(){
+	$('#elastislide').elastislide();
+	
 	var carouselCaptionWidth = $("#carousel-sidebar .active img").width();
 	$("#carousel-sidebar img").each(function(){
 		$(this).attr('width', carouselCaptionWidth);
